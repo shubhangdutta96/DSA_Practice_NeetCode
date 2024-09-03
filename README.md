@@ -1,8 +1,8 @@
-# DSA_Practice
+# DSA Practice
 
 Welcome to my **Daily DSA Practice** repository! This repository is dedicated to my daily practice of Data Structures and Algorithms (DSA) problems. I am systematically working through the NeetCode series, a curated list of DSA problems that cover essential topics and patterns.
 
-## 📚 About the Repository
+## 📚 About the Repositor 
 
 This repository is structured to showcase my daily progress in solving DSA problems. Each folder or file contains the solution to a specific problem, complete with explanations and insights into the approach taken. The problems are chosen to cover a wide range of topics, including but not limited to:
 
