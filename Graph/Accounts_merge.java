@@ -31,6 +31,7 @@ class Solution {
             rank[i] = 1;
         }
         
+        // 1. Populating Map
         for(int i=0; i<accounts.size(); i++){
             for(int j=1; j<accounts.get(i).size(); j++) {
                 String email = accounts.get(i).get(j);
@@ -44,6 +45,7 @@ class Solution {
             }
         }
 
+        // 2. Making connection
         List<String>[] list = new ArrayList[accounts.size()];
         for(int i=0; i<accounts.size(); i++){
             list[i] = new ArrayList<String>();
@@ -54,6 +56,7 @@ class Solution {
             list[parent].add(email);
         }
 
+        // 3. Final result 
         List<List<String>> ans = new ArrayList<>();
         for(int i=0; i<accounts.size(); i++) {
             if(list[i].isEmpty()) {
