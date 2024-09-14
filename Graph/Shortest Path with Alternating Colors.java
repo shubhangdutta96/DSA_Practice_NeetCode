@@ -52,10 +52,11 @@ class Solution {
             if(adj.get(u) != null) {
                 for(int i[] : adj.get(u)) {
                     int v = i[0];
-                    String key = v + "," + i[1];
-                    if(i[1] != color && !visited.contains(key)) {
+                    int nextColor = i[1];
+                    String key = v + "," + nextColor;
+                    if(nextColor != color && !visited.contains(key)) {
                         visited.add(key);
-                        q.offer(new int[] {v, cost+1, i[1]});
+                        q.offer(new int[] {v, cost+1, nextColor});
                     }
                 }
             }
