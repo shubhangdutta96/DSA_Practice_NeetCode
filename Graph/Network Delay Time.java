@@ -34,7 +34,7 @@ class Solution {
                     int v = i[0];
                     int newCost = cost + i[1];
 
-                    if(newCost < delay[v]) {
+                    if(newCost < delay[v]) { // RELAXATION STEP
                         delay[v] = newCost;
                         pq.offer(new int[] {v, newCost});
                     }
