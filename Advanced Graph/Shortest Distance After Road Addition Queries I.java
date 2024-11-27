@@ -13,7 +13,7 @@ class Solution {
             int u = query[0];
             int v = query[1];
             map.get(u).add(v);
-            ans[i] = shortestDist(map, 0, n-1, n);
+            ans[i] = shortestDist(map, 0, n-1, n);  // Dijksta's Algorithm
         }
 
         return ans;
